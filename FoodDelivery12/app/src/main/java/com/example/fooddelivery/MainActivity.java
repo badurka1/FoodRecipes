@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btnSignUp = (Button) findViewById(R.id.signUp);
 
 
+        //Przycisk logowania
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        //Przycisk rejestracji
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

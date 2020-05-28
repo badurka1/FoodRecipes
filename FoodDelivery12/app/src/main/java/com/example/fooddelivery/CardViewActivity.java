@@ -25,6 +25,8 @@ public class CardViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_view);
 
+        //Tworzenie listy do której dodajemy nasze przepisy z tytułami i zdjeciami
+
         recipes = new ArrayList<>();
 
         recipes.add(new Recipes("RACUCHY","3 szklanki mąki pszennej\n" +

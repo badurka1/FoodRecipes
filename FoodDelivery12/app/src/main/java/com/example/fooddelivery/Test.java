@@ -35,7 +35,7 @@ public class Test extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_signOut)
+                R.id.nav_home, R.id.nav_recipes, R.id.nav_slideshow, R.id.nav_signOut)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -44,7 +44,7 @@ public class Test extends AppCompatActivity {
 
 
 
-
+        //o autorze
         navigationView.getMenu().findItem(R.id.nav_about).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
@@ -53,7 +53,8 @@ public class Test extends AppCompatActivity {
             }
         });
 
-        navigationView.getMenu().findItem(R.id.nav_gallery).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+        //Przejscie do przepisow
+        navigationView.getMenu().findItem(R.id.nav_recipes).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 recipeActivity();
@@ -76,7 +77,7 @@ public class Test extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.test, menu);
+        //getMenuInflater().inflate(R.menu.test, menu);
         //MenuItem logOut = menu.findItem(R.id.nav_signOut);
         return true;
     }

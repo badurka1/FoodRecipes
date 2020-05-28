@@ -29,7 +29,7 @@ public class SingUp extends AppCompatActivity {
         password2 = (EditText) findViewById(R.id.password2);
         signUpButton = (Button) findViewById(R.id.signUpButton);
 
-
+//klasa odpowiada za rejestracje uzytkownika czyli dodanie go do bazy
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

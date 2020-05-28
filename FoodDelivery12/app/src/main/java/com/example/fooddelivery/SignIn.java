@@ -26,6 +26,7 @@ public class SignIn extends AppCompatActivity {
         password = (EditText) findViewById(R.id.passwordSignIn);
         signInButton = (Button) findViewById(R.id.signInButton);
 
+        //Logowanie do wnetrza aplikacji jesli email i haslo znajduja sie rzecz jasna w bazie
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

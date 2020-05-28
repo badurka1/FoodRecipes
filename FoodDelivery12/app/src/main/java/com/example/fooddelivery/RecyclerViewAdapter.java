@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+//Klasa ktora przechowuje dane, odpowiada za ich prezentowanie na poszczegolnych aktywnosciach w postaci listy dla ktorej kazdy element bedzie wysiwetlany jako popularny cardview, utworzony zostal layout do kazdego wyswietlanego obiektu z listy
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyHolder> {
     private Context mContext;
     private List<Recipes> mData;

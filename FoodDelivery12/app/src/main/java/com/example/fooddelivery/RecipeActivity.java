@@ -18,11 +18,14 @@ public class RecipeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
 
+
         mRecipeName = (TextView)findViewById(R.id.recipeTitle);
         mRecipeIngredients = (TextView)findViewById(R.id.ingredients);
         mRecipeMethodTitle = (TextView)findViewById(R.id.method);
         mRecipe = (TextView)findViewById(R.id.recipe);
 
+
+        //Wysylanie obiektow do nowej aktywnosci
         Intent intent = getIntent();
         String Title = intent.getExtras().getString("RecipeName");
         String Ingredients = intent.getExtras().getString("RecipeIngredients");
